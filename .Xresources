@@ -1,0 +1,154 @@
+! ~/.Xresources configuration file
+!-----------------------------------------------------------------------
+ 
+! nord inspired colors
+! black
+*color0:  #3B4252
+*color8:  #4C566A
+! red
+*color1:  #BF616A
+*color9:  #BF616A
+! green
+*color2:  #A3BE8C
+*color10: #A3BE8C
+! yellow
+*color3:  #EBCB8B
+*color11: #EBCB8B
+! blue
+*color4:  #81A1C1
+*color12: #81A1C1
+! purple
+*color5:  #B48EAD
+*color13: #B48EAD
+! cyan
+*color6:  #88C0D0
+*color14: #8FBCBB
+! white
+*color7:  #E5E9F0
+*color15: #ECEFF4
+ 
+*background:  #2E3440
+*foreground:  #D8DEE9
+*fading:      40
+*fadeColor:   #4C566A
+*cursorColor: #D8DEE9
+*colorUL:     #A3BE8C
+ 
+! dzen2 ----------------------------------------------------------------
+dzen2.font:         Hack-9
+dzen2.foreground:   #D8DEE9
+dzen2.background:   #2E3440
+ 
+! Xcursor settings -----------------------------------------------------
+Xcursor.theme: Adwaita
+ 
+! Xft settings ---------------------------------------------------------
+Xft.dpi:       96
+Xft.autohint:  0
+Xft.lcdfilter: lcddefault
+Xft.antialias: 1
+Xft.rgba:      rgb
+Xft.hinting:   1
+Xft.hintstyle: hintfull
+ 
+! urxvt ----------------------------------------------------------------
+URxvt.termName: rxvt-unicode
+URxvt.imLocale: fr_FR.UTF-8
+URxvt.saveLines: 5000
+URxvt.cursorBlink: true
+URxvt.foreground: #d8dee9
+URxvt.background: #2e3440
+URxvt.cursorColor: #d8dee9
+URxvt.throughColor: #4c566a
+URxvt.highlightColor: #4c566a
+URxvt.shading: 60
+URxvt.transparent: false
+URxvt.tintColor: #5e81ac
+URxvt.visualBell: false
+URxvt.urgentOnBell: true
+URxvt*font: xft:DejaVu Sans Mono:style=Book:pixelsize=12
+URxvt*boldFont: xft:DejaVu Sans Mono:style=Bold:pixelsize=12
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urlLauncher: w3m
+URxvt.matcher.button: 1
+URxvt.perl-ext-common: default,matcher
+!URxvt.perl-ext-common: default,tabbed,matcher !uncomment = autotabs in URxvt
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 7
+URxvt.tabbed.tab-bg: 4
+ 
+ 
+! xterm ----------------------------------------------------------------
+xterm*saveLines:      4096
+xterm*AllowIconInput: on
+xterm*background:     #2E3440
+xterm*foreground:     #D8DEE9
+xterm*border:         #D8DEE9
+xterm*faceName:       Hack
+xterm*Font:           Hack
+xterm*allowBoldFonts: false
+xterm*renderFont:     true
+xterm*faceSize:       9
+xterm*InternalBorder: 0
+xterm*MarginBell:     off
+xterm*MenuFont:       fixed8
+xterm*Mouse:          yellow
+xterm*TitleFont:      vtbold
+xterm*charClass:      33:48,37:48,45-47:48,64:48
+xterm*colorAttrMode:  true
+xterm*colorULMode:    true
+!xterm*colorUL:       green
+xterm*curses:         on
+xterm*cutNewline:     off
+xterm*jumpScroll:     on
+xterm*multiClickTime: 500
+xterm*multiScroll:    on
+xterm*reverseWrap:    off
+xterm*scrollBar:      off
+xterm*reverseVideo:   off
+xterm*VT100.Translations: #override \
+    Ctrl Shift <Key>V:    insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>C:    copy-selection(CLIPBOARD) \n\
+    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
+ 
+! xmessage -------------------------------------------------------------
+Xmessage.form.okay.shapeStyle:       rectangle
+Xmessage.center:                     TRUE
+Xmessage*buttons:                    OK
+Xmessage*defaultButton:              OK
+Xmessage.form.message.Scroll:        WhenNeeded
+Xmessage*borderWidth:                0
+Xmessage*Text.borderWidth:           0
+Xmessage*Command.borderWidth:        0
+Xmessage*Command.shapeStyle:         rectangle
+Xmessage*Command.highlightThickness: 2
+Xmessage*Command.internalWidth:      5
+Xmessage*Command.internalHeight:     1
+Xmessage*message.scrollHorizontal:   Never
+Xmessage*message.scrollVertical:     Never
+Xmessage.form.Command.background:    #2e3440
+Xmessage.form.Command.foreground:    #d8dee9
+ 
+ 
+! rofi -----------------------------------------------------------------
+rofi.fullscreen: true
+rofi.color-enabled: true
+rofi.color-window: argb:e8222D32,argb:00292f37,#EBCB8B
+rofi.color-normal: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#EBCB8B
+rofi.color-active: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#D8DEE9
+rofi.color-urgent: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#D8DEE9
+ 
+rofi.font: Hack 12
+rofi.eh: 1
+rofi.line-margin: 20
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.lines: 3
+rofi.width: 100
+rofi.padding: 200
+rofi.bw: 0
+rofi.location: 4
+rofi.modi: window,run,drun,ssh
+!eof ------------------------------------------------------------------
