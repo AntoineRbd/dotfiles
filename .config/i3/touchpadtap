@@ -1,0 +1,18 @@
+#!/bin/bash
+# configuration du touchpad sur macbook
+ 
+#syndaemon -t -i 2 -K -R & # désactiver le taptoclick si le clavier est utilisé
+ 
+synclient TouchPadOff=0 & # activation du touchpad
+synclient TapButton1=1 & # clic-gauche avec 1 doigt
+synclient TapButton2=3 & # clic-central avec 3 doigts
+synclient TapButton3=2 & # clic-droit avec 2 doigts
+ 
+synclient VertTwoFingerScroll=1 & # défilement vertical avec 2 doigts
+synclient HorizTwoFingerScroll=1 & # défilement horizontal avec 2 doigts
+ 
+synclient FingerHigh=150 & # réduire la sensibilité
+synclient PalmDetect=1 & # détecter la main
+synclient AccelFactor=0.030 & # facteur d'accélaration élevé
+ 
+exit 0

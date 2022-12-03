@@ -1,0 +1,4 @@
+#!/bin/bash
+cd Pictures/
+ls | xargs feh -q -z --bg-fill "$@" &
+exit 0
